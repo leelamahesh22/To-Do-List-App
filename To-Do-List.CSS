@@ -1,0 +1,176 @@
+## CSS
+<style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('file:///C:/Users/lappy/Downloads/Todo2.jpg'); /* Local image path */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            width: 70%; /* Set width to 75% */
+            max-width: 900px; /* Set max width for larger screens */
+            padding: 30px; /* Adjusted padding */
+            background: lightblack; /* Semi-transparent background */
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow-y: 2%;
+            height: 90%; /* Adjust height */
+            margin-top: 50px; /* Added margin-top for spacing */
+        }
+
+        h1 {
+            text-align: center;
+            color: white; /* White color for the title */
+            margin-bottom: 30px; /* Adjusted margin */
+            font-size: 2.5em; /* Adjusted font size */
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px; /* Adjusted margin */
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 15px; /* Adjusted margin */
+            padding: 15px; /* Decreased padding */
+            border-radius: 12px;
+            background: #f0f0f0; /* Light Grey */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            max-width: 400px; /* Set max width for To-Do List section */
+        }
+
+        .section:hover {
+            background-color: light; /* Slightly Darker Grey on Hover */
+            transform: scale(1.02);
+        }
+
+        input[type="text"], input[type="number"], input[type="date"], input[type="time"], select {
+            width: calc(100% - 22px);
+            padding: 10px; /* Adjusted padding */
+            margin-bottom: 10px; /* Adjusted margin */
+            border: 1px solid #ccc; /* Light Grey Border */
+            border-radius: 4px;
+            background: #ffffff; /* White Input Background */
+            color: #333;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+            border-color: #4A90E2; /* Attractive Blue on Focus */
+        }
+
+        button {
+            width: 100%;
+            padding: 10px; /* Adjusted padding */
+            margin-top: 5px; /* Adjusted margin */
+            background-color: dimgrey; /* Attractive Blue Button */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em; /* Adjusted font size */
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: dimgrey; /* Darker Blue on Hover */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-height: 400px; /* Adjusted max height */
+            overflow-y: 2%;
+            margin-bottom: 20px;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px; /* Adjusted padding */
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        li.completed {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .delete {
+            background-color: #d9534f; /* Red for delete */
+            border: none;
+            border-radius: 50%;
+            color: white;
+            padding: 8px; /* Adjusted padding */
+            font-size: 14px; /* Adjusted font size */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px; /* Adjusted width */
+            height: 35px; /* Adjusted height */
+            text-align: center;
+        }
+
+        .delete:hover {
+            background-color: #c9302c; /* Darker Red on Hover */
+        }
+
+        .added-tasks {
+            margin-top: 20px; /* Adjusted margin */
+            background: rgba(240, 248, 255, 0.9);
+            padding: 10px; /* Adjusted padding */
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #taskCount {
+            font-weight: bold;
+            margin-top: 10px;
+            color: white; /* White color for total tasks text */
+        }
+
+        /* Timeline styles */
+        .timeline {
+            position: relative;
+            margin: 20px 0; /* Adjusted margin */
+            padding: 10px;
+            color: white; /* White color for timeline text */
+        }
+
+        .timeline-item {
+            margin: 10px 0; /* Adjusted margin */
+            padding: 10px;
+            background: lightseagreen;
+            border-left: 4px solid #4A90E2; /* Attractive Blue */
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 10px;
+            width: 10px;
+            height: 10px;
+            background: #4A90E2; /* Attractive Blue */
+            border-radius: 50%;
+        }
+        h1{
+            background-color: lightblack;
+        }
+    </style>
